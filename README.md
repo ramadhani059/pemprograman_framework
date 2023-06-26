@@ -11,19 +11,19 @@ Website ini merupakan hasil dari modul 1 mengenai Framework CSS yaitu Bootstrap.
 ### 2. Latihan Routing Laravel 10 ( [Link](https://github.com/ramadhani059/pemprograman_framework/tree/main/Latihan-Routing-Laravel) )
 Website ini merupakan hasil dari modul 3 mengenai route dan bundling asset di framework laravel. kalian dapat mengunduh project ini dengan clone atau download manual repository ini. Setelah itu jangan lupa lakukan hal ini :
 
-Dibawah ini merupakan cara inisiasi folder **vendor** untuk framework Laravel 10
+Inisiasi folder **vendor** untuk framework Laravel 10
 
 ```
 composer install
 ```
 
-Dibawah ini merupakan cara inisiasi folder **node_modules** untuk framework Laravel 10
+Inisiasi folder **node_modules** 
 
 ```
 npm install
 ```
 
-Dibawah ini merupakan cara copy file **.env.example** menjadi file **.env**
+Copy file **.env.example** menjadi file **.env**
 
 ```
 copy .env.example .env
