@@ -54,7 +54,7 @@ Buat database baru dengan nama **"data_master"** melalui **PhpMyAdmin**.
 
 Set variabel **DB_DATABASE** dengan nilai **"data_master"** (sesuai dengan nama database yang dibuat melalui PhpMyAdmin)
 
-**Migrasi data** dari seeder ke database
+lalu **Migrasi data** dari seeder ke database
 
 ```
 php artisan migrate:fresh --seed
