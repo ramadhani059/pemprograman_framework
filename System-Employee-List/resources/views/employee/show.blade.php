@@ -10,25 +10,36 @@
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-md-12 mb-3">
+                    <div class="col-md-4 mb-3">
                         <label for="firstName" class="form-label">First Name</label>
                         <h5>{{ $employee->firstname }}</h5>
                     </div>
-                    <div class="col-md-12 mb-3">
+                    <div class="col-md-4 mb-3">
                         <label for="lastName" class="form-label">Last Name</label>
                         <h5>{{ $employee->lastname }}</h5>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="age" class="form-label">Age</label>
+                        <h5>{{ $employee->age }}</h5>
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="email" class="form-label">Email</label>
                         <h5>{{ $employee->email }}</h5>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="age" class="form-label">Age</label>
-                        <h5>{{ $employee->age }}</h5>
-                    </div>
-                    <div class="col-md-12 mb-3">
                         <label for="age" class="form-label">Position</label>
                         <h5>{{ $employee->position->name }}</h5>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="age" class="form-label">Curriculum Vitae (CV)</label>
+                        @if ($employee->original_filename)
+                            <h5>{{ $employee->original_filename }}</h5>
+                            <a href="{{ route('employees.downloadFile', ['employeeId' => $employee->id]) }}" class="btn btn-primary btn-sm mt-2">
+                                <i class="bi bi-download me-1"></i> Download CV
+                            </a>
+                        @else
+                            <h5>Tidak ada</h5>
+                        @endif
                     </div>
                 </div>
                 <hr>
